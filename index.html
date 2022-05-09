@@ -1,18 +1,39 @@
-<!doctype html>
-<html lang="zh-CN">
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>Bootstrap 101 Template</title>
-
-    <!-- Bootstrap -->
+    <title>主页</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css" >
 
+    <style>
+		.paper_list:hover{
+			color: gold;
+		}
 
-  </head>
-  <body>
+		.table-row{
+				height: 30px;
+				background-color: white;
+		}
+		.table-row:hover{
+				background-color:greenyellow;
+		}
+
+		td{
+				font-size: 25px;
+		}
+		.argo-title:hover{
+				color: greenyellow
+		}
+		body{
+				background-color: aliceblue;
+		}
+
+	</style>
+</head>
+<body>
     <!--
         布局容器（铺满 不留白）
     -->
@@ -24,48 +45,62 @@
         <div class="col-md-2" >
           <img src="bootstrap/images/logo.png" width="200">
         </div>
+
+        <div class="col-md-6">
+
+        </div>
+
+<!--        <div class="row">-->
+
+<!--        </div>-->
+
       <!--  列表 -->
-        <div class="col-md-3 offset-md-7">
-          <ul class="list-inline" >
-              <li class="list-inline-item "><a href="index.html" target="_blank" rel="noopener noreferrer"><p class="text-white">
+        <div class="col-md-4">
+          <ul class="list-inline" style="position: absolute;top: 25px">
+              <li class="list-inline-item t"><a href="index.html" target="_blank" ><p style="color: white">
                 主页</p></a>
               </li>
-              <li class="list-inline-item "><a href="705Env.html" target="_blank" rel="noopener noreferrer"><p class="">
-                <div class="text-center mt-auto mb-auto justify-content-center text-white" >实验环境</div>
-              </p></a>
+              <li class="list-inline-item "><a href="705Students.html" target="_blank" ><p style="color: white">
+                关于我们</p></a>
               </li>
-              <li class="list-inline-item "><a href="705Alg.html" target="_blank" rel="noopener noreferrer"><p class="text-white">
+              <li class="list-inline-item "><a href="705Env.html" target="_blank" ><p style="color: white">
+                实验环境</p></a>
+              </li>
+              <li class="list-inline-item "><a href="705Alg.html" target="_blank" ><p style="color: white">
                 实验算法</p></a>
               </li>
-              <li class="list-inline-item "><a href="705Prod.html" target="_blank" rel="noopener noreferrer"><p class="text-white">
+              <li class="list-inline-item "><a href="705Prod.html" target="_blank" ><p style="color: white">
                 科研成果</p></a>
               </li>
-              <li class="list-inline-item "><a href="705Cont.html" target="_blank" rel="noopener noreferrer"><p class="text-white">
+              <li class="list-inline-item "><a href="705Cont.html" target="_blank" ><p style="color: white">
                 联系我们</p></a>
               </li>
           </ul>
         </div>
+
       </div>
     </div>
 
 
     <div class="container">
+      <div class="row">
       <div style="position: relative; width: border-box;height: 500px">
-        <img src="bootstrap/images/rl_background.jpeg" width="1300" height="500" >
+        <img src="bootstrap/images/rl_background.jpeg" width="1170" height="500" >
           <!-- <a href="url">链接文本</a>-->
-          <span class="text-white" style="position: absolute;bottom: 50px;right: 70px;"><h1><b><a href="https://scholar.google.com/scholar?hl=zh-CN&as_sdt=0,5&q=%22reinforcement+learning%22&scisbd=1" target="_blank" rel="noopener noreferrer">强化学习最新研究</a></b></h1></span>
+        <span class="text-white" style="position: absolute;bottom: 50px;right: 70px;"><h1><b><a href="https://scholar.google.com/scholar?hl=zh-CN&as_sdt=0,5&q=%22reinforcement+learning%22&scisbd=1" target="_blank" rel="noopener noreferrer">强化学习最新研究</a></b></h1></span>
+      </div>
       </div>
     </div>
-
-    <div class="container">
+    <br>
+    <div class="container" >
       <div class="row">
           <div class="text-center content01 mt-auto mb-auto justify-content-center" id="content01">
             <h1><strong>实验室简介</strong></h1>
           </div>
-          <hr/>
+
       </div>
     </div>
-
+    <hr/>
     <div class="container">
       <p>
         我们实验室。。。我们实验室。。。我们实验室。。。我们实验室。。。我们实验室。。。我们实验室。。。我们实验室。。。我们实验室。。。
@@ -77,12 +112,13 @@
     </div>
 
 
-    <div class="container" style="background-color: #e8e5e5">
+    <div class="container" >
         <div class="text-center content02 mt-auto mb-auto justify-content-center" id="content02">
-            <div class="" ><h2 class="text-primary"><strong>705</strong>最新科研快报</h2></div>
+            <div class="" ><h2 class="text-black"><strong>705</strong>最新科研快报</h2></div>
           </div>
     </div>
 
+    <br>
 
     <div class="container">
       <div class="row">
@@ -97,7 +133,7 @@
                         <a href="#" class="btn btn-primary" role="button">
                             查看文章
                         </a>
-                        <a href="#" class="btn btn-dark" role="button">
+                        <a href="#" class="btn btn-success" role="button">
                             查看代码
                         </a>
                     </p>
@@ -115,7 +151,7 @@
                         <a href="#" class="btn btn-primary" role="button">
                             查看文章
                         </a>
-                        <a href="#" class="btn btn-dark" role="button">
+                        <a href="#" class="btn btn-success" role="button">
                             查看代码
                         </a>
                     </p>
@@ -133,7 +169,7 @@
                         <a href="#" class="btn btn-primary" role="button">
                             查看文章
                         </a>
-                        <a href="#" class="btn btn-dark" role="button">
+                        <a href="#" class="btn btn-success" role="button">
                             查看代码
                         </a>
                     </p>
@@ -151,7 +187,7 @@
                         <a href="#" class="btn btn-primary" role="button">
                             查看文章
                         </a>
-                        <a href="#" class="btn btn-dark" role="button">
+                        <a href="#" class="btn btn-success" role="button">
                             查看代码
                         </a>
                     </p>
@@ -161,16 +197,24 @@
       </div>
     </div>
 
-    <div class="container" style="background-color: #eec3c3">
+    <hr/>
+    <br>
+
+    <div class="container" >
         <div class="text-center  mt-auto mb-auto justify-content-center" >
-            <div class="" ><h2 class="text-primary">多样的训练环境</h2></div>
+            <div class="" ><h2 class="text-black">多样的训练环境</h2></div>
           </div>
     </div>
 
+    <br>
+    <br>
+    <br>
 
     <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
-    <script src="bootstrap/js/jquery.js" ></script>
+    <script src="https://fastly.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
     <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
-    <script src="bootstrap/js/bootstrap.min.js" ></script>
-  </body>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+
+</body>
 </html>
